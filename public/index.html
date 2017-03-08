@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mail</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<form action="/mail/send" method="POST">
+		<table>
+			<tr>
+				<td>发件人：</td>
+				<td><input type="text" name="sender"></td>
+			</tr>
+			<tr>
+				<td>收件人：</td>
+				<td><input type="text" name="recev"></td>
+			</tr>
+			<tr>
+				<td>主题：</td>
+				<td><input type="text" name="subject"></td>
+			</tr>
+			<tr>
+				<td>内容：</td>
+				<td><textarea col="20" row="3" name="content"></textarea></td>
+			</tr>
+		</table>
+		<input type="submit" name="send" value="发送">
+	</form>
+</body>
+</html>
